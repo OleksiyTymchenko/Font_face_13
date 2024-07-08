@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Face</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="./img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Francois+One&family=PT+Sans:wght@400;700&family=Staatliches&family=Tourney:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header class="header ">
+      <div class="container">
+        <div class="left">
+          <a href="#" class="language-tag">ENG</a>  
+          <nav class="nav">
+            <ul class="list">
+              <li class="list__item">
+                <a href="#home">Documentation</a>
+              </li>
+              <!-- /.list__item -->
+              <li class="list__item">
+                <a href="#customers">/</a>
+              </li>
+              <!-- /.list__item -->
+              <li class="list__item">
+                <a href="#customers">Who's using</a>
+              </li>
+              <!-- /.list__item -->
+            </ul>
+            <!-- /.list -->
+        </div>
+        <!-- /.left -->
+        </nav>
+        <!-- /.nav -->
+        <div >
+          <a href="#" class="logo">
+            <svg>
+              <use xlink:href="./img/logo-header/company-logo-black.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.logo -->
+      </div>
+      <!-- /.container -->
+
+      <div class="burger">
+        <input type="checkbox" id="burger-toggle" />
+        <label for="burger-toggle" class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="burger-menu">
+          <ul>
+            <li><a href="#home">Documentation</a></li>
+            <li><a href="#customers">Who's using</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /.burger -->
+    </header>
+
+    <main class="main">
+      <section id="home" class="section hero ">
+        <div class="container">
+          <article>
+            <div class="title">
+              <h2>Introduction</h2><sup class="title-chapter">Chapter 1</sup> 
+            </div>
+            <!-- /.title -->
+              <p>Welcome to the very start of your React Native journey! If you're looking for environment setup<br>
+                 instructions, they've moved <span class="underline">to their own section</span>. Continue reading for an introduction to the<br>
+                  documentation, Native Components, React, and more!</p>
+
+          </article>
+          <article>
+            <div class="title">
+              <h2>core components</h2><sup class="title-chapter">Chapter 2</sup> 
+            </div>
+            <!-- /.title -->
+              <p>React Native is an open source framework for building Android and iOS applications using React and<br>
+                 the app platform’s native capabiles. With React Native, you use JavaScript to access your platform’s<br>
+                  APIs as well as to describe the appearance and behavior of your UI using React components: <span class="italic">bundles<br>
+                   of reusable, nestable code</span>. You can learn more about React in the next section. But first, let’s cover<br>
+                    how components work in React Native.</p>
+
+          </article>
+          <article>
+            <div class="title">
+              <h2>react fundamentals</h2><sup class="title-chapter">Chapter 3</sup> 
+            </div>
+            <!-- /.title -->
+              <p>React Native runs on <span class="underline">React</span>, a popular open source library for building user interfaces with<br>
+                 JavaScript. To make the most of React Native, it helps to understand React itself. This section can get<br>
+                  you started or can serve as a refresher course.
+              </p>
+              <p >
+                We’re going to cover the core concepts behind React:
+              </p>
+              <p>
+                <span class="bold">+ components.</span> The rest of this introduction to React uses cats in its examples: friendly,<br>
+                 approachable creatures that need names and a cafe to work in.
+              </p>
+              <p>
+                <span class="bold">+ JSX.</span> React and React Native use JSX, a syntax that lets you write elements inside JavaScript like so:<br>
+                <span class="bg-word">&lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</span>.
+              </p>
+              <p>
+                The React docs have <span class="underline">a comprehensive guide to JSX</span> you can refer to learn even more. Because JSX is<br>
+                 JavaScript, you can use variables inside it. Here you are declaring a <span class="bg-word"> name</span> for the cat, name, and<br>
+                  embedding it with curly braces inside <span class="bg-word">&lt;Text&gt;</span>
+              </p>
+              <p>
+                <span class="bold">+ props.</span> Props is short for “properties”. 
+              </p>
+              <p>
+                <span class="bold">+ state.</span> While you can think of props as arguments you use to configure how components render,<br>
+                 state is like a component’s personal data storage. State is useful for handling data that changes over<br>
+                  time or that comes from user interaction. State gives your components memory!
+              </p>
+
+          </article>
+          <article>
+            <div class="title">
+              <h2>handling text input</h2><sup class="title-chapter">Chapter 4</sup> 
+            </div>
+            <!-- /.title -->
+              <p>
+                TextInput is a Core Component that allows the user to enter text. It has an <span class="italic">onChangeText</span> prop that<br>
+                 takes a function to be called every time the text changed, and an onSubmitEditing prop that takes a<br>
+                  function to be called when the text is submitted.
+              </p>
+              <p>
+                For example, let's say that as the user types, you're translating their words into a different language.<br>
+                 In this new language, every single word is written the same way: 🍕. So the sentence "Hello there<br>
+                  Bob" would be translated as "🍕 🍕".
+              </p>
+
+          </article>
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section -->
+      
+    </main>
+    <footer id="footer" class="footer none">
+      <div class="container">
+        <div class="logo">
+          <img src="./img/logo/logo_icon.png" alt="logo" />
+          <svg>
+            <use xlink:href="./img/logo/logo.svg#slogan"></use>
+          </svg>
+        </div>
+        <!-- /.logo -->
+        <div class="footer-list">
+          <div class="footer-list__item">
+            <a href="#"><span class="bold">Quick Links</span></a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#">About Us</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#">Blog</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#"> Contact</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#"> FAQ</a>
+          </div>
+          <!-- /.footer-list__item -->
+        </div>
+        <!-- /.footer-list -->
+        <div class="footer-list">
+          <div class="footer-list__item">
+            <a href="#"><span class="bold">Legal Stuff</span></a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#">Disclaimer</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#">Financing</a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#"> Privacy Policy </a>
+          </div>
+          <!-- /.footer-list__item -->
+          <div class="footer-list__item">
+            <a href="#"> Terms of Service </a>
+          </div>
+          <!-- /.footer-list__item -->
+        </div>
+        <!-- /.footer-list -->
+        <form class="footer-serch" action="/search" method="get">
+          <p class="bold">Knowing you're alway on<br>
+          the best energy deal.</p>
+          <input
+          class="placeholder"
+            type="search"
+            id="search-box"
+            name="q"
+            placeholder="Enter your phone Number"
+          />
+          <button class="button" type="submit">Sign up Now</button>
+        </form>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    
+  </body>
+</html>
